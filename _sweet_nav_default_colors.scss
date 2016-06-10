@@ -1,0 +1,44 @@
+.menu-border {
+  background-color: $flexnav-link-color;
+}
+
+.menu-link {
+  background-color: $flexnav-color;
+}
+
+.menu-link-hover {
+  background-color: $flexnav-color;
+}
+
+.flexnav {
+  color: white;
+  background-color: $flexnav-color;
+  border-bottom: 1px solid darken($flexnav-color, 5);
+}
+
+
+.flexnav__link {
+  color: $flexnav-link-color;
+  &:hover, &.active {
+    color: $flexnav-link-color-hover;
+  }
+}
+
+.dropdown-content {
+  li a {
+    &:hover {
+      background-color: #eee;
+    }
+  }
+}
+
+.footer {
+  background-color: $flexnav-color;
+}
+
+
+@include media-query(portable) {
+  .responsive-menu {
+    background-color: $flexnav-color;
+  }
+}

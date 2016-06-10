@@ -1,0 +1,21 @@
+{
+  "name": "sweet_nav.css",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Berlimioz/sweet_nav",
+  "authors": [
+    "Chloé Roger <chloe@bemioz.com>"
+  ],
+  "description": "Simple responsive navbar",
+  "main": "_sweet_nav.scss",
+  "keywords": [
+    "css",
+    "nav",
+    "responsive"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "inuit-defaults": "~0.2.0",
+    "inuit-functions": "~0.2.0",
+    "inuit-responsive-tools": "~0.1.3"
+  }
+}

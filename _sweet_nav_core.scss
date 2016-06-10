@@ -1,0 +1,135 @@
+.invisible .flexnav--sticky {
+  position: static;
+}
+
+.flexnav--sticky {
+  z-index: 100;
+  top: 0;
+  position: fixed;
+}
+
+.flexnav--center {
+  align-self: center;
+}
+
+
+.palette {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+
+.flexnav {
+  transition: all 0.1s ease-in;
+  // height: $nav-height;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  width: 100%;
+
+  font-size: $flexnav-font-size;
+
+  .logo {
+    max-height: $nav-height - $logo-padding ;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.flexnav__link {
+  padding: $flexnav-padding-ends $flexnav-padding-sides;
+  text-decoration: none;
+  display: inline-block;
+  align-self: center;
+}
+
+.ios .ios-topbar-padding {
+  padding-top: $ios-topbar-height;
+}
+
+.dropdown-content {
+  margin: 3.5em 0em;
+  li a {
+    padding: 10px;
+    display: block;
+  }
+  li.divider {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  overflow: hidden;
+  max-width: 250px;
+  position: fixed;
+  z-index: 1000;
+  top: 10px;
+  right: 10px;
+  box-shadow: 0px 0px 2px #ccc;
+  border-radius: 4px;
+  display: none;
+}
+
+.translucid-header {
+  .navbar{
+    position: absolute;
+    //line-height: 0;
+  }
+}
+
+.flexnav {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+.scroll-top {
+  .flexnav {
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+  }
+}
+
+.scroll-top.translucid-header {
+  .flexnav {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.flexnav-logo{
+  img{
+    display: block;
+  }
+}
+
+@include media-query(portable) {
+  .responsive-menu {
+    display                : flex;
+    justify-content        : space-around;
+    -webkit-justify-content: space-around;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter        : blur(20px);
+    width                  : 100%;
+    line-height            : 1.2;
+    text-align             : center;
+  }
+  .flexnav .responsive-menu {
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  .flexnav__link  {
+    padding: 5px 10px;
+  }
+}
