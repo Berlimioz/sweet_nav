@@ -1,6 +1,6 @@
 {
   "name": "sweet_nav",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple responsive navbar",
   "main": "_sweet_nav.scss",
   "repository": {
